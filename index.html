@@ -38,8 +38,14 @@
         function postMessage() {
             // Assuming myObject.postMessage is called here
             // For demonstration purposes, I'll simulate a response
-            var responseData = "kk";
-            myObject.onmessage({ data: responseData });
+ myObject.postMessage("Hello")
+
+            // var responseData = "kk";
+            // myObject.onmessage({ data: responseData });
+
+    //         myObject.onmessage = function(event) {
+    // document.write(`Response: ${event.data}`);
+    }
         }
     </script>
 </body>
