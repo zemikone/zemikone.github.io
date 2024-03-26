@@ -25,7 +25,8 @@
 <script type="text/javascript">
 
     myObject.onmessage = function(event) {
-    document.write(`Response: ${event.data}`);
+
+        document.write('<p style="font-size: 24px;">${event.data}</p>');
     }
 
     function postMessage() {
