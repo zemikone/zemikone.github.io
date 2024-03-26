@@ -15,26 +15,22 @@
             background-color: #04AA6D;
         }
         .response {
-            font-size: 100px; /* Change this to the desired font size */
+            font-size: 50px; 
         }
     </style>
 </head>
 <body>
-    <h1>Test App 1</h1>
+    <h1>Test App</h1>
     <p>Welcome to my test App!</p>
     <button class="button" onclick="postMessage()">Post</button>
 
     <div id="responseContainer"></div>
 
     <script type="text/javascript">
-        // Assuming myObject is defined elsewhere in your code
-        // For demonstration purposes, I'll create a mock myObject
-       ;
 
-        myObject.onmessage = function(event) {
+    myObject.onmessage = function(event) {
     document.getElementById('responseContainer').innerHTML = `<div class="response">Response: ${event.data}</div>`;
     }
-
 
 
    function postMessage() {
