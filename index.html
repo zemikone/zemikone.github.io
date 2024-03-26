@@ -29,24 +29,18 @@
     <script type="text/javascript">
         // Assuming myObject is defined elsewhere in your code
         // For demonstration purposes, I'll create a mock myObject
-        var myObject = {
-            onmessage: function(event) {
-                document.getElementById('responseContainer').innerHTML = `<div class="response">Response: ${event.data}</div>`;
-            }
-        };
+       ;
 
-        function postMessage() {
-            // Assuming myObject.postMessage is called here
-            // For demonstration purposes, I'll simulate a response
- myObject.postMessage("Hello")
-
-            // var responseData = "kk";
-            // myObject.onmessage({ data: responseData });
-
-    //         myObject.onmessage = function(event) {
-    // document.write(`Response: ${event.data}`);
+        myObject.onmessage = function(event) {
+    document.getElementById('responseContainer').innerHTML = `<div class="response">Response: ${event.data}</div>`;
     }
-        }
+
+
+
+   function postMessage() {
+        myObject.postMessage("Hello")
+    }
+        
     </script>
 </body>
 </html>
